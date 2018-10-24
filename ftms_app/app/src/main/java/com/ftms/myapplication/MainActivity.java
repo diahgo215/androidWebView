@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             // requestPermission의 두번째 매개변수는 배열이므로 아이템이 여러개 있을 수 있기 때문에 결과를 배열로 받는다.
             // 해당 예시는 요청 퍼미션이 한개 이므로 i=0 만 호출한다.
-            if(grantResults[0] == REQUEST_ACCESS_FINE_LOCATION){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 showWebView();
             }else{
                 //해당 권한이 거절된 경우.
